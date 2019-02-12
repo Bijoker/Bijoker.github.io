@@ -1,0 +1,2584 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="test,python,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="写文章    我的主页 收藏的文章 喜欢的文章 已购内容 我的钱包 设置 帮助与反馈 退出  夜间模式 开关  宋体黑体 简繁  发现  关注  消息 2 评论 简信2 投稿请求 喜欢和赞 关注 赞赏和付费 其它提醒   ​                 搭建Hexo博客进阶篇—主题自定义（三）  lifeColder 关注 2017.05.23 07:46*               字数">
+<meta name="keywords" content="test,python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="分类测试">
+<meta property="og:url" content="http://yoursite.com/2019/02/12/分类测试/index.html">
+<meta property="og:site_name" content="极客">
+<meta property="og:description" content="写文章    我的主页 收藏的文章 喜欢的文章 已购内容 我的钱包 设置 帮助与反馈 退出  夜间模式 开关  宋体黑体 简繁  发现  关注  消息 2 评论 简信2 投稿请求 喜欢和赞 关注 赞赏和付费 其它提醒   ​                 搭建Hexo博客进阶篇—主题自定义（三）  lifeColder 关注 2017.05.23 07:46*               字数">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://upload.jianshu.io/users/upload_avatars/14929069/f32c2069-9f6b-4f42-8a5d-7236fa905cd7?imageMogr2/auto-orient/strip%7CimageView2/1/w/120/h/120">
+<meta property="og:image" content="https://upload.jianshu.io/users/upload_avatars/6117739/8fbc731b-0d03-437d-97f7-6bfbd271edaf.png?imageMogr2/auto-orient/strip%7CimageView2/1/w/96/h/96">
+<meta property="og:image" content="https://upload.jianshu.io/users/upload_avatars/6117739/8fbc731b-0d03-437d-97f7-6bfbd271edaf.png?imageMogr2/auto-orient/strip%7CimageView2/1/w/96/h/96">
+<meta property="og:image" content="https://cdn2.jianshu.io/assets/web/web-note-ad-1-c2e1746859dbf03abe49248893c9bea4.png">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/14771805-a2403f13563ee235.jpg?imageMogr2/auto-orient/strip%7CimageView2/1/w/300/h/240">
+<meta property="og:image" content="https://upload.jianshu.io/users/upload_avatars/14771805/b523844e-1909-469d-b884-7607acb20c20.jpg?imageMogr2/auto-orient/strip%7CimageView2/1/w/48/h/48">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12970107-155c34fefb873803.PNG?imageMogr2/auto-orient/strip%7CimageView2/1/w/300/h/240">
+<meta property="og:image" content="https://upload.jianshu.io/users/upload_avatars/12970107/5542bf70-61c0-4334-9a59-16d9bb0324b8.png?imageMogr2/auto-orient/strip%7CimageView2/1/w/48/h/48">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/15645795-b94ce1da8c095eee.png?imageMogr2/auto-orient/strip%7CimageView2/1/w/300/h/240">
+<meta property="og:image" content="https://upload.jianshu.io/users/upload_avatars/15645795/14f9ea5c-3223-4f08-94d0-90fafabbbeff?imageMogr2/auto-orient/strip%7CimageView2/1/w/48/h/48">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7547996-88a494864d3f5410.png?imageMogr2/auto-orient/strip%7CimageView2/1/w/300/h/240">
+<meta property="og:image" content="https://upload.jianshu.io/users/upload_avatars/7547996/bca490b4-948b-47f3-95ce-e3bc45f485c6.jpg?imageMogr2/auto-orient/strip%7CimageView2/1/w/48/h/48">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5744080-19e8204aa1ec30ae.png?imageMogr2/auto-orient/strip%7CimageView2/1/w/300/h/240">
+<meta property="og:image" content="https://upload.jianshu.io/users/upload_avatars/5744080/14891ec8-9fbf-4875-896f-0a1061b95f39.jpg?imageMogr2/auto-orient/strip%7CimageView2/1/w/48/h/48">
+<meta property="og:image" content="https://upload.jianshu.io/users/upload_avatars/2478791/57c447dc5cd8?imageMogr2/auto-orient/strip%7CimageView2/1/w/48/h/48">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1727605-f5e6a1e159561fd7.jpg?imageMogr2/auto-orient/strip%7CimageView2/1/w/300/h/240">
+<meta property="og:image" content="https://upload.jianshu.io/users/upload_avatars/1727605/8a2e2e13bda3.jpeg?imageMogr2/auto-orient/strip%7CimageView2/1/w/48/h/48">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5337323-e31806ec6cb503a2.jpg?imageMogr2/auto-orient/strip%7CimageView2/1/w/300/h/240">
+<meta property="og:image" content="https://upload.jianshu.io/users/upload_avatars/5337323/ddb37710-c1a9-4cf1-bac3-a9ac85649cff?imageMogr2/auto-orient/strip%7CimageView2/1/w/48/h/48">
+<meta property="og:image" content="https://cdn2.jianshu.io/assets/default_avatar/14-0651acff782e7a18653d7530d6b27661.jpg?imageMogr2/auto-orient/strip%7CimageView2/1/w/48/h/48">
+<meta property="og:image" content="https://upload.jianshu.io/users/upload_avatars/16097/%E9%83%8E%E5%BF%83%E5%A6%82%E9%93%81.gif?imageMogr2/auto-orient/strip%7CimageView2/1/w/48/h/48">
+<meta property="og:updated_time" content="2019-02-12T07:22:25.030Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="分类测试">
+<meta name="twitter:description" content="写文章    我的主页 收藏的文章 喜欢的文章 已购内容 我的钱包 设置 帮助与反馈 退出  夜间模式 开关  宋体黑体 简繁  发现  关注  消息 2 评论 简信2 投稿请求 喜欢和赞 关注 赞赏和付费 其它提醒   ​                 搭建Hexo博客进阶篇—主题自定义（三）  lifeColder 关注 2017.05.23 07:46*               字数">
+<meta name="twitter:image" content="https://upload.jianshu.io/users/upload_avatars/14929069/f32c2069-9f6b-4f42-8a5d-7236fa905cd7?imageMogr2/auto-orient/strip%7CimageView2/1/w/120/h/120">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/02/12/分类测试/">
+
+
+
+
+
+  <title>分类测试 | 极客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">极客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">工欲善其事，必先利其器！</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            站点地图
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/12/分类测试/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Joker Bi">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://qiniu.bidongdong.top/image/jpg/jokerbi.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="极客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">分类测试</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-12T15:09:39+08:00">
+                2019-02-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/PS3/" itemprop="url" rel="index">
+                    <span itemprop="name">PS3</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/PS3/Games/" itemprop="url" rel="index">
+                    <span itemprop="name">Games</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  7.4k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  31
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>写文章 </p>
+<p><a href=""><img src="https:////upload.jianshu.io/users/upload_avatars/14929069/f32c2069-9f6b-4f42-8a5d-7236fa905cd7?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120" alt="120"></a></p>
+<ul>
+<li><a href="">我的主页</a></li>
+<li><a href="">收藏的文章</a></li>
+<li><a href="">喜欢的文章</a></li>
+<li><a href="">已购内容</a></li>
+<li><a href="">我的钱包</a></li>
+<li><a href="">设置</a></li>
+<li><a href="">帮助与反馈</a></li>
+<li><a href="">退出</a></li>
+</ul>
+<p>夜间模式</p>
+<p>开关</p>
+<hr>
+<p>宋体黑体</p>
+<p>简繁</p>
+<ul>
+<li><a href="">发现 </a></li>
+<li><a href="">关注 </a></li>
+<li>消息 2<ul>
+<li><a href="">评论</a></li>
+<li><a href="">简信2</a></li>
+<li><a href="">投稿请求</a></li>
+<li><a href="">喜欢和赞</a></li>
+<li><a href="">关注</a></li>
+<li><a href="">赞赏和付费</a></li>
+<li><a href="">其它提醒</a></li>
+</ul>
+</li>
+<li>​               </li>
+</ul>
+<h1 id="搭建Hexo博客进阶篇—主题自定义（三）"><a href="#搭建Hexo博客进阶篇—主题自定义（三）" class="headerlink" title="搭建Hexo博客进阶篇—主题自定义（三）"></a>搭建Hexo博客进阶篇—主题自定义（三）</h1><p><img src="https:////upload.jianshu.io/users/upload_avatars/6117739/8fbc731b-0d03-437d-97f7-6bfbd271edaf.png?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96" alt="96"> </p>
+<p><a href="">lifeColder</a></p>
+<p>关注</p>
+<p>2017.05.23 07:46*               字数 3302             阅读 2373评论 0喜欢 4</p>
+<p>本文续接 <a href="">Hexo 文档讲解篇</a></p>
+<h2 id="Yelee主题介绍"><a href="#Yelee主题介绍" class="headerlink" title="Yelee主题介绍"></a>Yelee主题介绍</h2><h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><p>创建 Hexo 主题非常容易，您只要在 themes 文件夹内，新增一个任意名称的文件夹，并修改 _config.yml 内的 theme 设定，即可切换主题。一个主题可能会有以下的结构：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml      //这个是主题配置项文件</span><br><span class="line">├── languages        //这个是语言文件</span><br><span class="line">├── layout           //这个是模板文件</span><br><span class="line">├── scripts           </span><br><span class="line">└── source</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>盛年不重来，一日难再晨。及时当勉励，岁月不待人</p>
+</blockquote>
+<ol>
+<li><p><strong>Layout</strong></p>
+<p>布局文件夹。用于存放主题的模板文件，决定了网站内容的呈现方式，Hexo 内建 Swig 模板引擎，您可以另外安装插件来获得 <code>EJS</code>、<code>Haml</code> 或 <code>Jade</code> 支持，Hexo 根据模板文件的扩展名来决定所使用的模板引擎，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">layout.ejs   - 使用 EJS</span><br><span class="line">layout.swig  - 使用 Swig</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>yelle主题采用的是EJS模板，EJS模板可以参考 <a href="https://link.jianshu.com?t=https://segmentfault.com/a/1190000004286562" target="_blank" rel="noopener">ejs中文文档</a></p>
+<ol>
+<li><p><strong>source</strong></p>
+<p>资源文件夹，除了模板以外的 Asset，例如 CSS、JavaScript 文件等，都应该放在这个文件夹中。文件或文件夹开头名称为 _（下划线线）或隐藏的文件会被忽略。<br>如果文件可以被渲染的话，会经过解析然后储存到 public 文件夹，否则会直接拷贝到 public 文件夹。</p>
+</li>
+</ol>
+<h2 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h2><p>模板决定了网站内容的呈现方式，每个主题至少都应包含一个 index 模板，以下是各页面相对应的模板名称：</p>
+<table>
+<thead>
+<tr>
+<th>模板</th>
+<th>用途</th>
+<th>回调</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>index</td>
+<td>首页</td>
+<td></td>
+</tr>
+<tr>
+<td>post</td>
+<td>文章</td>
+<td>index</td>
+</tr>
+<tr>
+<td>page</td>
+<td>分页</td>
+<td>index</td>
+</tr>
+<tr>
+<td>archive</td>
+<td>归档</td>
+<td>index</td>
+</tr>
+<tr>
+<td>category</td>
+<td>分类归档</td>
+<td>archive</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>标签归档</td>
+<td>archive</td>
+</tr>
+</tbody>
+</table>
+<h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><p>如果页面结构类似，例如两个模板都有页首（Header）和页脚（Footer），您可考虑通过「布局」让两个模板共享相同的结构。一个布局文件必须要能显示 body 变量的内容，如此一来模板的内容才会被显示，举例来说：</p>
+<figure class="highlight plain"><figcaption><span>index,ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">index</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>layout.ejs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;&lt;%- body %&gt;&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>生成 ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;index&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>每个模板都默认使用 layout 布局，您可在 front-matter 指定其他布局，或是设为 false 来关闭布局功能，您甚至可在布局中再使用其他布局来建立嵌套布局。</p>
+<h3 id="局部模板"><a href="#局部模板" class="headerlink" title="局部模板"></a>局部模板</h3><p>局部模板让您在不同模板之间共享相同的组件，例如页首（Header）、页脚（Footer）或侧边栏（Sidebar）等，可利用局部模板功能分割为个别文件，让维护更加便利。举例来说：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock partial/header.ejs %&#125;</span><br><span class="line">&lt;h1 id=&quot;logo&quot;&gt;&lt;%= config.title %&gt;&lt;/h1&gt;</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% codeblock index.ejs %&#125;</span><br><span class="line">&lt;%- partial(&apos;partial/header&apos;) %&gt;</span><br><span class="line">&lt;div id=&quot;content&quot;&gt;Home page&lt;/div&gt;</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
+<p>生成：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1 id=&quot;logo&quot;&gt;My Site&lt;/h1&gt;</span><br><span class="line">&lt;div id=&quot;content&quot;&gt;Home page&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h3><p>您可以在局部模板中指定局部变量并使用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock partial/header.ejs %&#125;</span><br><span class="line">&lt;h1 id=&quot;logo&quot;&gt;&lt;%= title&gt;&lt;/h1&gt;</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% codeblock index.ejs %&#125;</span><br><span class="line">&lt;%- partial(&apos;partial/header&apos;, &#123;title: &apos;Hello World&apos;&#125;) %&gt;</span><br><span class="line">&lt;div id=&quot;content&quot;&gt;Home page&lt;/div&gt;</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
+<p>生成：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1 id=&quot;logo&quot;&gt;Hello World&lt;/h1&gt;</span><br><span class="line">&lt;div id=&quot;content&quot;&gt;Home page&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><p>如果您的主题太过于复杂，或是需要生成的文件量太过于庞大，可能会大幅降低性能，除了简化主题外，您可以考虑 Hexo 2.7 新增的局部缓存（Fragment Caching） 功能。</p>
+<p>本功能借鉴于 <a href="https://link.jianshu.com?t=http://guides.rubyonrails.org/caching_with_rails.html#fragment-caching" target="_blank" rel="noopener">Ruby on Rails</a>，它储存局部内容，下次便能直接使用缓存内容，可以减少文件夹查询并使生成速度更快。</p>
+<p>它可用于页首、页脚、侧边栏等文件不常变动的位置，举例来说：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- fragment_cache(&apos;header&apos;, function()&#123;</span><br><span class="line">  return &apos;&lt;header&gt;&lt;/header&gt;&apos;;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>如果您使用局部模板的话，可以更简单：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(&apos;header&apos;, &#123;&#125;, &#123;cache: true&#125;);</span><br></pre></td></tr></table></figure>
+<p>但是，如果您开启了 relative_link 参数的话，请勿使用局部缓存功能，因为相对链接在每个页面可能不同。</p>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这些变量很重要，因为将来自定义ejs,加入新的页面的时候，都需要了解这些变量</span><br></pre></td></tr></table></figure>
+<h3 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h3><table>
+<thead>
+<tr>
+<th>变量</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>site</td>
+<td>网站变量</td>
+</tr>
+<tr>
+<td>page</td>
+<td>针对该页面的内容以及 front-matter 所设定的变量。</td>
+</tr>
+<tr>
+<td>config</td>
+<td>网站配置</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>主题配置。继承自网站配置。</td>
+</tr>
+<tr>
+<td>_ (单下划线)</td>
+<td>Lodash 函数库</td>
+</tr>
+<tr>
+<td>path</td>
+<td>当前页面的路径（不含根路径）</td>
+</tr>
+<tr>
+<td>url</td>
+<td>当前页面的完整网址</td>
+</tr>
+<tr>
+<td>env</td>
+<td>环境变量</td>
+</tr>
+</tbody>
+</table>
+<h3 id="网站变量"><a href="#网站变量" class="headerlink" title="网站变量"></a>网站变量</h3><table>
+<thead>
+<tr>
+<th>变量</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>site.posts</td>
+<td>所有文章</td>
+</tr>
+<tr>
+<td>site.pages</td>
+<td>所有分页</td>
+</tr>
+<tr>
+<td>site.categories</td>
+<td>所有分类</td>
+</tr>
+<tr>
+<td>site.tags</td>
+<td>所有标签</td>
+</tr>
+</tbody>
+</table>
+<h3 id="页面变量"><a href="#页面变量" class="headerlink" title="页面变量"></a>页面变量</h3><table>
+<thead>
+<tr>
+<th>变量</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>site.posts</td>
+<td>所有文章</td>
+</tr>
+<tr>
+<td>site.pages</td>
+<td>所有分页</td>
+</tr>
+<tr>
+<td>site.categories</td>
+<td>所有分类</td>
+</tr>
+<tr>
+<td>site.tags</td>
+<td>所有标签</td>
+</tr>
+</tbody>
+</table>
+<p>A、<strong>页面</strong></p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page.title</td>
+<td>页面标题</td>
+</tr>
+<tr>
+<td>page.date</td>
+<td>页面建立日期（Moment.js 对象）</td>
+</tr>
+<tr>
+<td>page.updated</td>
+<td>页面更新日期（Moment.js 对象）</td>
+</tr>
+<tr>
+<td>page.comments</td>
+<td>留言是否开启</td>
+</tr>
+<tr>
+<td>page.layout</td>
+<td>布局名称</td>
+</tr>
+<tr>
+<td>page.content</td>
+<td>页面的完整内容</td>
+</tr>
+<tr>
+<td>page.excerpt</td>
+<td>页面摘要</td>
+</tr>
+<tr>
+<td>page.more</td>
+<td>除了页面摘要的其余内容</td>
+</tr>
+<tr>
+<td>page.source</td>
+<td>页面原始路径</td>
+</tr>
+<tr>
+<td>page.full_source</td>
+<td>页面的完整原始路径</td>
+</tr>
+<tr>
+<td>page.path</td>
+<td>页面网址（不含根路径）。我们通常在主题中使用 url_for(page.path)。</td>
+</tr>
+<tr>
+<td>page.permalink</td>
+<td>页面的完整网址</td>
+</tr>
+<tr>
+<td>page.prev</td>
+<td>上一个页面。如果此为第一个页面则为 null。</td>
+</tr>
+<tr>
+<td>page.next</td>
+<td>下一个页面。如果此为最后一个页面则为 null。</td>
+</tr>
+<tr>
+<td>page.raw</td>
+<td>文章的原始内容</td>
+</tr>
+<tr>
+<td>page.photos</td>
+<td>文章的照片（用于相簿）</td>
+</tr>
+<tr>
+<td>page.link</td>
+<td>文章的外部链接（用于链接文章）</td>
+</tr>
+</tbody>
+</table>
+<p>B、<strong>文章</strong></p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page.published</td>
+<td>如果该文章已发布则为True</td>
+</tr>
+<tr>
+<td>page.categories</td>
+<td>该文章的所有分类</td>
+</tr>
+<tr>
+<td>page.tags</td>
+<td>该文章的所有标签</td>
+</tr>
+</tbody>
+</table>
+<p>C、<strong>首页</strong></p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page.per_page</td>
+<td>每页显示的文章数量</td>
+</tr>
+<tr>
+<td>page.total</td>
+<td>总文章数</td>
+</tr>
+<tr>
+<td>page.current</td>
+<td>目前页数</td>
+</tr>
+<tr>
+<td>page.current_url</td>
+<td>目前分页的网址</td>
+</tr>
+<tr>
+<td>page.posts</td>
+<td>本页文章</td>
+</tr>
+<tr>
+<td>page.prev</td>
+<td>上一页的页数。如果此页是第一页的话则为 0。</td>
+</tr>
+<tr>
+<td>page.prev_link</td>
+<td>上一页的网址。如果此页是第一页的话则为 ‘’。</td>
+</tr>
+<tr>
+<td>page.next</td>
+<td>下一页的页数。如果此页是最后一页的话则为 0。</td>
+</tr>
+<tr>
+<td>page.next_link</td>
+<td>下一页的网址。如果此页是最后一页的话则为 ‘’。</td>
+</tr>
+<tr>
+<td>page.path</td>
+<td>当前页面的路径（不含根目录）。我们通常在主题中使用 url_for(page.path)。</td>
+</tr>
+</tbody>
+</table>
+<p>D、<strong>归档</strong></p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page.archive</td>
+<td>等于 true</td>
+</tr>
+<tr>
+<td>page.year</td>
+<td>年份归档 (4位)</td>
+</tr>
+<tr>
+<td>page.month</td>
+<td>月份归档 (没有前导零的2位数)</td>
+</tr>
+</tbody>
+</table>
+<p>E、<strong>分类</strong></p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page.category</td>
+<td>分类名称</td>
+</tr>
+</tbody>
+</table>
+<p>F、<strong>标签</strong></p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page.tag</td>
+<td>标签名称</td>
+</tr>
+</tbody>
+</table>
+<h2 id="辅助函数"><a href="#辅助函数" class="headerlink" title="辅助函数"></a>辅助函数</h2><p>辅助函数帮助您在模版中快速插入内容。辅助函数不能在源文件中使用。</p>
+<h3 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h3><p>A、<strong>url_for</strong></p>
+<p>在路径前加上根路径，从 Hexo 2.7 开始您应该使用此函数而不是 <code>config.root + path</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- url_for(path) %&gt;</span><br></pre></td></tr></table></figure>
+<p>&lt;%- url_for(/2017/02/20/HexoBlog/) %&gt;</p>
+<p>B、<strong>relative_url</strong></p>
+<p>取得与 from 相对的 to 路径。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- relative_url(from, to) %&gt;</span><br></pre></td></tr></table></figure>
+<p>C、<strong>gravatar</strong></p>
+<p>插入 Gravatar 图片。<br>如果你不指定 options 参数，将会应用默认参数。否则，你可以将其设置为一个数字，这个数字将会作为 Gravatar 的大小参数。最后，如果你设置它一个对象，它将会被转换为 Gravatar 的一个查询字符串参数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- gravatar(email, [options]) %&gt;;</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- gravatar(&apos;a@abc.com&apos;) %&gt;</span><br><span class="line">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787</span><br><span class="line">&lt;%- gravatar(&apos;a@abc.com&apos;, 40) %&gt;</span><br><span class="line">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40</span><br><span class="line">&lt;%- gravatar(&apos;a@abc.com&apos; &#123;s: 40, d: &apos;http://example.com/image.png&apos;&#125;) %&gt;</span><br><span class="line">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40&amp;d=http%3A%2F%2Fexample.com%2Fimage.png</span><br></pre></td></tr></table></figure>
+<p>&lt;%- gravatar(‘<a href="https://link.jianshu.com?t=mailto:a@abc.com" target="_blank" rel="noopener">a@abc.com</a>‘) %&gt;<br>&lt;%- gravatar(‘<a href="https://link.jianshu.com?t=mailto:a@abc.com" target="_blank" rel="noopener">a@abc.com</a>‘, 40) %&gt;<br>&lt;%- gravatar(‘<a href="https://link.jianshu.com?t=mailto:a@abc.com" target="_blank" rel="noopener">a@abc.com</a>‘ {s: 40, d: ‘<a href="https://link.jianshu.com?t=http://example.com/image.png&#39;" target="_blank" rel="noopener">http://example.com/image.png’</a>}) %&gt;</p>
+<p>注意了没，这个不是在文中中使用的哦，这个是ejs模板语法，要在ejs模板文件中使用</p>
+<h3 id="HTML-标签"><a href="#HTML-标签" class="headerlink" title="HTML 标签"></a>HTML 标签</h3><p>A、<strong>css</strong></p>
+<p>载入 CSS 文件。path 可以是数组或字符串，如果 path 开头不是 / 或任何协议，则会自动加上根路径；如果后面没有加上 .css 扩展名的话，也会自动加上。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- css(path, ...) %&gt;</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- css(&apos;style.css&apos;) %&gt;</span><br><span class="line">// &lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot; type=&quot;text/css&quot;&gt;</span><br><span class="line">&lt;%- css([&apos;style.css&apos;, &apos;screen.css&apos;]) %&gt;</span><br><span class="line">// &lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot; type=&quot;text/css&quot;&gt;</span><br><span class="line">// &lt;link rel=&quot;stylesheet&quot; href=&quot;/screen.css&quot; type=&quot;text/css&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>B、<strong>js</strong></p>
+<p>载入 JavaScript 文件。path 可以是数组或字符串，如果 path 开头不是 / 或任何协议，则会自动加上根路径；如果后面没有加上 .js 扩展名的话，也会自动加上。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- js(path, ...) %&gt;</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- js(&apos;script.js&apos;) %&gt;</span><br><span class="line">// &lt;script type=&quot;text/javascript&quot; src=&quot;/script.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;%- js([&apos;script.js&apos;, &apos;gallery.js&apos;]) %&gt;</span><br><span class="line">// &lt;script type=&quot;text/javascript&quot; src=&quot;/script.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">// &lt;script type=&quot;text/javascript&quot; src=&quot;/gallery.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>C、<strong>link_to</strong></p>
+<p>插入链接。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- link_to(path, [text], [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>external</td>
+<td>在新视窗打开链接</td>
+<td>false</td>
+</tr>
+<tr>
+<td>class</td>
+<td>Class 名称</td>
+<td></td>
+</tr>
+<tr>
+<td>id</td>
+<td>ID</td>
+</tr>
+</tbody>
+</table>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- link_to(&apos;http://www.google.com&apos;) %&gt;</span><br><span class="line">// &lt;a href=&quot;http://www.google.com&quot; title=&quot;http://www.google.com&quot;&gt;http://www.google.com&lt;/a&gt;</span><br><span class="line">&lt;%- link_to(&apos;http://www.google.com&apos;, &apos;Google&apos;) %&gt;</span><br><span class="line">// &lt;a href=&quot;http://www.google.com&quot; title=&quot;Google&quot;&gt;Google&lt;/a&gt;</span><br><span class="line">&lt;%- link_to(&apos;http://www.google.com&apos;, &apos;Google&apos;, &#123;external: true&#125;) %&gt;</span><br><span class="line">// &lt;a href=&quot;http://www.google.com&quot; title=&quot;Google&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Google&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<p>D、<strong>mail_to</strong></p>
+<p>插入电子邮箱链接。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- mail_to(path, [text], [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class</td>
+<td>Class 名称</td>
+</tr>
+<tr>
+<td>id</td>
+<td>ID</td>
+</tr>
+<tr>
+<td>subject</td>
+<td>邮件主题</td>
+</tr>
+<tr>
+<td>cc</td>
+<td>抄送（CC）</td>
+</tr>
+<tr>
+<td>bcc</td>
+<td>密送（BCC）</td>
+</tr>
+<tr>
+<td>body</td>
+<td>邮件内容</td>
+</tr>
+</tbody>
+</table>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- mail_to(&apos;a@abc.com&apos;) %&gt;</span><br><span class="line">// &lt;a href=&quot;mailto:a@abc.com&quot; title=&quot;a@abc.com&quot;&gt;a@abc.com&lt;/a&gt;</span><br><span class="line">&lt;%- mail_to(&apos;a@abc.com&apos;, &apos;Email&apos;) %&gt;</span><br><span class="line">// &lt;a href=&quot;mailto:a@abc.com&quot; title=&quot;Email&quot;&gt;Email&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<p>E、<strong>image_tag</strong></p>
+<p>插入图片。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- image_tag(path, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alt</td>
+<td>图片的替代文字</td>
+</tr>
+<tr>
+<td>class</td>
+<td>Class 名称</td>
+</tr>
+<tr>
+<td>id</td>
+<td>ID</td>
+</tr>
+<tr>
+<td>width</td>
+<td>图片宽度</td>
+</tr>
+<tr>
+<td>height</td>
+<td>图片高度</td>
+</tr>
+</tbody>
+</table>
+<p>F、<strong>favicon_tag</strong></p>
+<p>插入favicon。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- favicon_tag(path) %&gt;</span><br></pre></td></tr></table></figure>
+<p>G、<strong>feed_tag</strong></p>
+<p>插入 feed 链接。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- feed_tag(path, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>Feed</td>
+<td>标题</td>
+</tr>
+<tr>
+<td>type</td>
+<td>Feed</td>
+<td>类型   atom</td>
+</tr>
+</tbody>
+</table>
+<h3 id="条件函数"><a href="#条件函数" class="headerlink" title="条件函数"></a>条件函数</h3><p>A、<strong>is_current</strong></p>
+<p>检查 path 是否符合目前页面的网址。开启 strict 选项启用严格比对。</p>
+<blockquote>
+<p>&lt;%- is_current(path, [strict]) %&gt;</p>
+</blockquote>
+<p>B、<strong>is_home</strong></p>
+<p>检查目前是否为首页。</p>
+<blockquote>
+<p>&lt;%- is_home() %&gt;</p>
+</blockquote>
+<p>C、<strong>is_post</strong></p>
+<p>检查目前是否为文章。</p>
+<blockquote>
+<p>&lt;%- is_post() %&gt;</p>
+</blockquote>
+<p>D、<strong>is_archive</strong></p>
+<p>检查目前是否为存档页面。</p>
+<blockquote>
+<p>&lt;%- is_archive() %&gt;</p>
+</blockquote>
+<p>E、<strong>is_year</strong></p>
+<p>检查目前是否为年度归档页面。</p>
+<blockquote>
+<p>&lt;%- is_year() %&gt;</p>
+</blockquote>
+<p>F、<strong>is_month</strong></p>
+<p>检查目前是否为月度归档页面。</p>
+<blockquote>
+<p>&lt;%- is_month() %&gt;</p>
+</blockquote>
+<p>G、<strong>is_category</strong></p>
+<p>检查目前是否为分类归档页面。<br>如果给定一个字符串作为参数，将会检查目前是否为指定分类。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- is_category() %&gt;</span><br><span class="line">&lt;%- is_category(&apos;hobby&apos;) %&gt;</span><br></pre></td></tr></table></figure>
+<p>H、<strong>is_tag</strong></p>
+<p>检查目前是否为标签归档页面。<br>如果给定一个字符串作为参数，将会检查目前是否为指定标签。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- is_tag() %&gt;</span><br><span class="line">&lt;%- is_tag(&apos;hobby&apos;) %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="字符串处理"><a href="#字符串处理" class="headerlink" title="字符串处理"></a>字符串处理</h3><p>A、<strong>trim</strong></p>
+<p>清除字符串开头和结尾的空格。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- trim(string) %&gt;</span><br></pre></td></tr></table></figure>
+<p>B、<strong>strip_html</strong></p>
+<p>清除字符串中的 HTML 标签。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- strip_html(string) %&gt;</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- strip_html(&apos;It&apos;s not &lt;b&gt;important&lt;/b&gt; anymore!&apos;) %&gt;</span><br><span class="line">// It&apos;s not important anymore!</span><br></pre></td></tr></table></figure>
+<p>C、<strong>titlecase</strong></p>
+<p>把字符串转换为正确的 Title case。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- titlecase(string) %&gt;</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- titlecase(&apos;this is an apple&apos;) %&gt;</span><br><span class="line">#   This is an Apple</span><br></pre></td></tr></table></figure>
+<p>D、<strong>markdown</strong></p>
+<p>使用 Markdown 解析字符串。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- markdown(str) %&gt;</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- markdown(&apos;make me **strong**&apos;) %&gt;</span><br><span class="line">// make me &lt;strong&gt;strong&lt;/strong&gt;</span><br></pre></td></tr></table></figure>
+<p>E、<strong>render</strong></p>
+<p>解析字符串。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- render(str, engine, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<p>F、<strong>word_wrap</strong></p>
+<p>使每行的字符串长度不超过 length。length 预设为 80。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- word_wrap(str, [length]) %&gt;</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- word_wrap(&apos;Once upon a time&apos;, 8) %&gt;</span><br><span class="line">// Once upon\n a time</span><br></pre></td></tr></table></figure>
+<p>G、<strong>truncate</strong></p>
+<p>移除超过 length 长度的字符串。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- truncate(text, length) %&gt;</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- truncate(&apos;Once upon a time in a world far far away&apos;, &#123;length: 17&#125;) %&gt;</span><br><span class="line">// Once upon a ti...</span><br><span class="line">&lt;%- truncate(&apos;Once upon a time in a world far far away&apos;, &#123;length: 17, separator: &apos; &apos;&#125;) %&gt;</span><br><span class="line">// Once upon a...</span><br><span class="line">&lt;%- truncate(&apos;And they found that many people were sleeping better.&apos;, &#123;length: 25, omission: &apos;... (continued)&apos;&#125;) %&gt;</span><br><span class="line">// And they f... (continued)</span><br></pre></td></tr></table></figure>
+<h3 id="模板-1"><a href="#模板-1" class="headerlink" title="模板"></a>模板</h3><p>A、<strong>partial</strong></p>
+<p>载入其他模板文件，您可在 locals 设定区域变量。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(layout, [locals], [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cache</td>
+<td>缓存（使用 Fragment cache）</td>
+<td>false</td>
+</tr>
+<tr>
+<td>only</td>
+<td>限制局部变量。在模板中只能使用 locals 中设定的变量。</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p>B、<strong>fragment_cache</strong></p>
+<p>局部缓存。它储存局部内容，下次使用时就能直接使用缓存。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- fragment_cache(id, fn);</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- fragment_cache(&apos;header&apos;, function()&#123;</span><br><span class="line">  return &apos;&lt;header&gt;&lt;/header&gt;&apos;;</span><br><span class="line">&#125;) %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="日期与时间"><a href="#日期与时间" class="headerlink" title="日期与时间"></a>日期与时间</h3><h4 id="date"><a href="#date" class="headerlink" title="date"></a>date</h4><p>插入格式化的日期。<code>date</code> 可以是 <code>UNIX</code> 时间、ISO 字符串、Date 对象或 <a href="https://link.jianshu.com?t=http://momentjs.com/" target="_blank" rel="noopener">Moment.js</a> 对象。<code>format</code> 默认为 <code>date_format</code> 配置信息。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- date(date, [format]) %&gt;</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- date(Date.now()) %&gt;</span><br><span class="line">// 2013-01-01</span><br><span class="line">&lt;%- date(Date.now(), &apos;YYYY/M/D&apos;) %&gt;</span><br><span class="line">// Jan 1 2013</span><br></pre></td></tr></table></figure>
+<h4 id="date-xml"><a href="#date-xml" class="headerlink" title="date_xml"></a>date_xml</h4><p>插入 XML 格式的日期。date 可以是 UNIX 时间、ISO 字符串、Date 对象或 Moment.js 对象。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- date_xml(date) %&gt;</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- date_xml(Date.now()) %&gt;</span><br><span class="line">// 2013-01-01T00:00:00.000Z</span><br></pre></td></tr></table></figure>
+<h4 id="time"><a href="#time" class="headerlink" title="time"></a>time</h4><p>插入格式化的时间。date 可以是 UNIX 时间、ISO 字符串、Date 对象或 Moment.js 对象。format 默认为 time_format 配置信息。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- time(date, [format]) %&gt;</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- time(Date.now()) %&gt;</span><br><span class="line">// 13:05:12</span><br><span class="line">&lt;%- time(Date.now(), &apos;h:mm:ss a&apos;) %&gt;</span><br><span class="line">// 1:05:12 pm</span><br></pre></td></tr></table></figure>
+<h4 id="full-date"><a href="#full-date" class="headerlink" title="full_date"></a>full_date</h4><p>插入格式化的日期和时间。date 可以是 UNIX 时间、ISO 字符串、Date 对象或 Moment.js 对象。format 默认为 date_format + time_format。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- full_date(date, [format]) %&gt;</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- full_date(new Date()) %&gt;</span><br><span class="line">// Jan 1, 2013 0:00:00</span><br><span class="line">&lt;%- full_date(new Date(), &apos;dddd, MMMM Do YYYY, h:mm:ss a&apos;) %&gt;</span><br><span class="line">// Tuesday, January 1st 2013, 12:00:00 am</span><br></pre></td></tr></table></figure>
+<h4 id="moment"><a href="#moment" class="headerlink" title="moment"></a>moment</h4><p>Moment.js 函数库。</p>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><h4 id="list-categories"><a href="#list-categories" class="headerlink" title="list_categories"></a>list_categories</h4><p>插入分类列表。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- list_categories([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>orderby</td>
+<td>分类排列方式</td>
+<td>name</td>
+</tr>
+<tr>
+<td>order</td>
+<td>分类排列顺序。1, asc 升序；-1, desc 降序。</td>
+<td>1</td>
+</tr>
+<tr>
+<td>show_count</td>
+<td>显示每个分类的文章总数</td>
+<td>true</td>
+</tr>
+<tr>
+<td>style</td>
+<td>分类列表的显示方式。使用 list 以无序列表（unordered list）方式显示。</td>
+<td>list</td>
+</tr>
+<tr>
+<td>separator</td>
+<td>分类间的分隔符号。只有在 style 不是 list 时有用。</td>
+<td>,</td>
+</tr>
+<tr>
+<td>depth</td>
+<td>要显示的分类层级。0 显示所有层级的分类；-1 和 0 很类似，但是显示不分层级；1 只显示第一层的分类。</td>
+<td>0</td>
+</tr>
+<tr>
+<td>class</td>
+<td>分类列表的 class 名称。</td>
+<td>category</td>
+</tr>
+<tr>
+<td>transform</td>
+<td>改变分类名称显示方法的函数</td>
+</tr>
+</tbody>
+</table>
+<h4 id="list-tags"><a href="#list-tags" class="headerlink" title="list_tags"></a>list_tags</h4><p>插入标签列表。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- list_tags([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>orderby</td>
+<td>标签排列方式</td>
+<td>name</td>
+</tr>
+<tr>
+<td>order</td>
+<td>标签排列顺序。1, asc 升序；-1, desc 降序。</td>
+<td>1</td>
+</tr>
+<tr>
+<td>show_count</td>
+<td>显示每个标签的文章总数</td>
+<td>true</td>
+</tr>
+<tr>
+<td>style</td>
+<td>标签列表的显示方式。使用 list 以无序列表（unordered list）方式显示。</td>
+<td>list</td>
+</tr>
+<tr>
+<td>separator</td>
+<td>标签间的分隔符号。只有在 style 不是 list 时有用。</td>
+<td></td>
+</tr>
+<tr>
+<td>class</td>
+<td>标签列表的 class 名称。</td>
+<td>tag</td>
+</tr>
+<tr>
+<td>transform</td>
+<td>改变标签名称显示方法的函数</td>
+<td></td>
+</tr>
+<tr>
+<td>amount</td>
+<td>要显示的标签数量（0 = 无限制）</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h4 id="list-archives"><a href="#list-archives" class="headerlink" title="list_archives"></a>list_archives</h4><p>插入归档列表。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- list_archives([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>类型。此设定可为 yearly 或 monthly。</td>
+<td>monthly</td>
+</tr>
+<tr>
+<td>order</td>
+<td>排列顺序。1, asc 升序；-1, desc 降序。</td>
+<td>1</td>
+</tr>
+<tr>
+<td>show_count</td>
+<td>显示每个归档的文章总数</td>
+<td>true</td>
+</tr>
+<tr>
+<td>format</td>
+<td>日期格式</td>
+<td>MMMM YYYY</td>
+</tr>
+<tr>
+<td>style</td>
+<td>归档列表的显示方式。使用 list 以无序列表（unordered list）方式显示。</td>
+<td>list</td>
+</tr>
+<tr>
+<td>separator</td>
+<td>归档间的分隔符号。只有在 style 不是 list 时有用。</td>
+<td></td>
+</tr>
+<tr>
+<td>class</td>
+<td>归档列表的 class 名称。    archive</td>
+<td></td>
+</tr>
+<tr>
+<td>transform</td>
+<td>改变归档名称显示方法的函数</td>
+</tr>
+</tbody>
+</table>
+<h4 id="list-posts"><a href="#list-posts" class="headerlink" title="list_posts"></a>list_posts</h4><p>插入文章列表。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- list_posts([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>orderby</td>
+<td>文章排列方式</td>
+<td>date</td>
+</tr>
+<tr>
+<td>order</td>
+<td>文章排列顺序。1, asc 升序；-1, desc 降序。</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>style</td>
+<td>文章列表的显示方式。使用 list 以无序列表（unordered list）方式显示。</td>
+<td>list</td>
+</tr>
+<tr>
+<td>separator</td>
+<td>文章间的分隔符号。只有在 style 不是 list 时有用。</td>
+<td></td>
+</tr>
+<tr>
+<td>class</td>
+<td>文章列表的 class 名称。    post</td>
+<td></td>
+</tr>
+<tr>
+<td>amount</td>
+<td>要显示的文章数量（0 = 无限制）</td>
+<td>6</td>
+</tr>
+<tr>
+<td>transform</td>
+<td>改变文章名称显示方法的函数</td>
+</tr>
+</tbody>
+</table>
+<h4 id="tagcloud"><a href="#tagcloud" class="headerlink" title="tagcloud"></a>tagcloud</h4><p>插入标签云。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- tagcloud([tags], [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>min_font</td>
+<td>最小字体尺寸</td>
+<td>10</td>
+</tr>
+<tr>
+<td>max_font</td>
+<td>最大字体尺寸</td>
+<td>20</td>
+</tr>
+<tr>
+<td>unit</td>
+<td>字体尺寸的单位</td>
+<td>px</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>标签总量</td>
+<td>40</td>
+</tr>
+<tr>
+<td>orderby</td>
+<td>标签排列方式</td>
+<td>name</td>
+</tr>
+<tr>
+<td>order</td>
+<td>标签排列顺序。1, sac 升序；-1, desc 降序</td>
+<td>1</td>
+</tr>
+<tr>
+<td>color</td>
+<td>使用颜色</td>
+<td>false</td>
+</tr>
+<tr>
+<td>start_color</td>
+<td>开始的颜色。您可使用十六进位值（#b700ff），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。</td>
+<td></td>
+</tr>
+<tr>
+<td>end_color</td>
+<td>结束的颜色。您可使用十六进位值（#b700ff），rgba（rgba(183, 0, 255, 1)），hsla（hsla(283, 100%, 50%, 1)）或 颜色关键字。此变量仅在 color 参数开启时才有用。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><h4 id="paginator"><a href="#paginator" class="headerlink" title="paginator"></a>paginator</h4><p>插入分页链接。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- paginator(options) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>base</td>
+<td>基础网址</td>
+<td>/</td>
+</tr>
+<tr>
+<td>format</td>
+<td>网址格式</td>
+<td>page/%d/</td>
+</tr>
+<tr>
+<td>total</td>
+<td>分页总数</td>
+<td>1</td>
+</tr>
+<tr>
+<td>current</td>
+<td>目前页数</td>
+<td>0</td>
+</tr>
+<tr>
+<td>prev_text</td>
+<td>上一页链接的文字。仅在 prev_next 设定开启时才有用。</td>
+<td>Prev</td>
+</tr>
+<tr>
+<td>next_text</td>
+<td>下一页链接的文字。仅在 prev_next 设定开启时才有用。</td>
+<td>Next</td>
+</tr>
+<tr>
+<td>space</td>
+<td>空白文字   …</td>
+<td></td>
+</tr>
+<tr>
+<td>prev_next</td>
+<td>显示上一页和下一页的链接</td>
+<td>true</td>
+</tr>
+<tr>
+<td>end_size</td>
+<td>显示于两侧的页数</td>
+<td>1</td>
+</tr>
+<tr>
+<td>mid_size</td>
+<td>显示于中间的页数</td>
+<td>2</td>
+</tr>
+<tr>
+<td>show_all</td>
+<td>显示所有页数。如果开启此参数的话，end_size 和 mid_size 就没用了。</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<h4 id="search-form"><a href="#search-form" class="headerlink" title="search_form"></a>search_form</h4><p>插入 Google 搜索框。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- search_form(options) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class</td>
+<td>表单的 class name</td>
+<td>search-form</td>
+</tr>
+<tr>
+<td>text</td>
+<td>搜索提示文字</td>
+<td>Search</td>
+</tr>
+<tr>
+<td>button</td>
+<td>显示搜索按钮。此参数可为布尔值（boolean）或字符串，当设定是字符串的时候，即为搜索按钮的文字。</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<h4 id="number-format"><a href="#number-format" class="headerlink" title="number_format"></a>number_format</h4><p>格式化数字。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- number_format(number, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>precision</td>
+<td>数字精度。此选项可为 false 或非负整数。</td>
+<td>false</td>
+</tr>
+<tr>
+<td>delimiter</td>
+<td>千位数分隔符号</td>
+<td>,</td>
+</tr>
+<tr>
+<td>separator</td>
+<td>整数和小数之间的分隔符号</td>
+<td>,</td>
+</tr>
+</tbody>
+</table>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- number_format(12345.67, &#123;precision: 1&#125;) %&gt;</span><br><span class="line">// 12,345.68</span><br><span class="line">&lt;%- number_format(12345.67, &#123;precision: 4&#125;) %&gt;</span><br><span class="line">// 12,345.6700</span><br><span class="line">&lt;%- number_format(12345.67, &#123;precision: 0&#125;) %&gt;</span><br><span class="line">// 12,345</span><br><span class="line">&lt;%- number_format(12345.67, &#123;delimiter: &apos;&apos;&#125;) %&gt;</span><br><span class="line">// 12345.67</span><br><span class="line">&lt;%- number_format(12345.67, &#123;separator: &apos;/&apos;&#125;) %&gt;</span><br><span class="line">// 12,345/67</span><br></pre></td></tr></table></figure>
+<h4 id="open-graph"><a href="#open-graph" class="headerlink" title="open_graph"></a>open_graph</h4><p>插入 open graph 资源。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- open_graph([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>页面标题 (og:title)</td>
+<td>page.title</td>
+</tr>
+<tr>
+<td>type</td>
+<td>页面类型 (og:type)</td>
+<td>blog</td>
+</tr>
+<tr>
+<td>url</td>
+<td>页面网址 (og:url)</td>
+<td>url</td>
+</tr>
+<tr>
+<td>image</td>
+<td>页面图片 (og:image)</td>
+<td>内容中的图片</td>
+</tr>
+<tr>
+<td>site_name</td>
+<td>网站名称 (og:site_name)</td>
+<td>config.title</td>
+</tr>
+<tr>
+<td>description</td>
+<td>页面描述 (og:desription)</td>
+<td>内容摘要或前 200 字</td>
+</tr>
+<tr>
+<td>twitter_card</td>
+<td>Twitter 卡片类型 (twitter:card)</td>
+<td>summary</td>
+</tr>
+<tr>
+<td>twitter_id</td>
+<td>Twitter ID</td>
+<td>(twitter:creator)</td>
+</tr>
+<tr>
+<td>twitter_site</td>
+<td>Twitter 网站</td>
+<td>(twitter:site)</td>
+</tr>
+<tr>
+<td>google_plus</td>
+<td>Google+</td>
+<td>个人资料链接</td>
+</tr>
+<tr>
+<td>fb_admins</td>
+<td>Facebook</td>
+<td>管理者 ID</td>
+</tr>
+<tr>
+<td>fb_app_id</td>
+<td>Facebook</td>
+<td>应用程序 ID</td>
+</tr>
+</tbody>
+</table>
+<p>last: <strong>toc</strong></p>
+<p>解析内容中的标题标签 (h1~h6) 并插入目录。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- toc(str, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class</td>
+<td>Class 名称</td>
+<td>toc</td>
+</tr>
+<tr>
+<td>list_number</td>
+<td>显示编号</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- toc(page.content) %&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Hexo页面渲染流程"><a href="#Hexo页面渲染流程" class="headerlink" title="Hexo页面渲染流程"></a>Hexo页面渲染流程</h2><h3 id="Yelee目录说明"><a href="#Yelee目录说明" class="headerlink" title="Yelee目录说明"></a>Yelee目录说明</h3><p>看一下，Yelee主题的文件目录:</p>
+<p><img src="" alt="img"></p>
+<p>目录结构</p>
+<p>根据这个目录我们来分析<code>Hexo</code>是如何工作的<br>我们都知道两个命名，一个是 <code>hexo new page name</code> ,一个是 <code>hexo new post name</code></p>
+<ul>
+<li><code>hexo new page name</code><br>创建一个新页面 , 页面具体渲染模板在Theme主题下的layout文件夹下面</li>
+<li><code>hexo new post name/hexo new post draft</code><br>是创建一篇新文章，新文章保存在source/_posts目录下，如果是<code>hexo new draft name</code>,则是保存在<code>source/_drafts</code>目录下,那么根据<code>scaffolds</code>的模板，可以确定新建的文章或者草稿的基本配置<br>看下图：</li>
+</ul>
+<p><img src="" alt="img"></p>
+<p>原理</p>
+<p>下面看一下我们的，引擎模板文件：<br>入口模板</p>
+<p><img src="" alt="img"></p>
+<p>入口模板</p>
+<p>具体实现</p>
+<p><img src="" alt="img"></p>
+<p>实现过程</p>
+<p>想要自定义404吗？想要写一个个性化的about me吗？想要实现完全自定义吗？哈哈这个你还是得去学习 <code>EJS</code> 啦</p>
+<blockquote>
+<p>如何实现用D3-cloud来展现标签云</p>
+</blockquote>
+<p>有没有感觉 <code>Hexo</code> 自带的 <code>tag-cloud</code> 标签云太丑陋了呢！作为一个前端程序员，对审美可是有着比较高的要求，<br><code>github</code> 上面有 <code>d3-cloud</code> 这个项目，那么我们来玩一玩吧，把<code>github</code>上的<code>d3-cloud</code>项目在我们的<code>hexo博客</code>中使用哈！<br>hexo是静态博客，所以最后在网上看到的都是静态的内容，也就是说，我们的看到的标签云也是静态的已经生成好的内容，并不会随着刷新页面而重新计算生成另外样式的标签云。<br>当然d3-cloud这个项目，提供了浏览器端和node端运行的版本，见它的例子，我们可以在客户端运行，也可以在服务端作为 node运行。</p>
+<p><code>具体操作流程</code>：</p>
+<ol>
+<li><p>找到关于tagcloud模板文件以及JS和CSS<br>我上面说的，应该很容易找到吧，我已经找到了呀</p>
+</li>
+<li><p>安装模块</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install canvas --save</span><br><span class="line">npm install d3-cloud --save</span><br><span class="line">npm install d3 --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>找到文件： 你的 <code>blog项目 -&gt; node_modules -&gt; hexo -&gt;plugins -&gt; helper -&gt; index.js</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var tagcloud = require(&apos;./tagcloud&apos;);</span><br><span class="line">helper.register(&apos;tagcloud&apos;, tagcloud);</span><br><span class="line">helper.register(&apos;tag_cloud&apos;, tagcloud);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>//修改为下面的代码：目的是不直接修改tagcloud.js，保留代码<br>var tagcloud = require(‘./tagcloud’);<br>var tagcloudd3 = require(‘./tagcloudd3’);<br>helper.register(‘tagcloud’, tagcloudd3);<br>helper.register(‘tag_cloud’, tagcloudd3);<br>\<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">1. 新建文件tagcloudd3.js ：位置在blog项目 -&gt; node_modules -&gt; hexo -&gt;plugins -&gt; helper -&gt; tagcloudd3.js</span><br><span class="line">   `tagcloud3.js的内容如下`:</span><br></pre></td></tr></table></figure></p>
+<pre><code>&apos;use strict&apos;;   
+var Canvas = require(&quot;canvas&quot;);
+var cloud = require(&quot;d3-cloud&quot;);
+var d3 = require(&quot;d3&quot;);
+
+var layout = cloud()//利用d3-cloud计算每个标签的位置
+.size([600, 400])
+.canvas(function() { return new Canvas(1, 1); })
+.padding(7)
+.rotate(function() { return ~~(Math.random() * 2) * 90; })
+.font(&quot;Impact&quot;)
+.fontSize(function(d) { return d.size; });
+var fill = d3.scale.category20();//利用d3的接口给每个标签颜色  
+function tagcloudHelper(tags){
+    /****与tagcloud.js一样，获得tags 开始***/
+if ((!tags || !tags.hasOwnProperty(&apos;length&apos;))){
+    tags = this.site.tags;
+}
+
+if (!tags || !tags.length) return &apos;&apos;;
+var result = [];
+tags = tags.sort(&apos;name&apos;, 1);
+    // Ignore tags with zero posts
+tags = tags.filter(function(tag){
+    return tag.length;
+});
+    /****与tagcloud.js一样，获得tags 结束***/
+    //计算标签出现次数最大值，比如，博客中一共有两个标签，一个是hello,一个是world,hello出现2次，world 出现1次，那么maxsize就是2
+var maxsize = 1;
+tags.sort(&apos;length&apos;).forEach(function(tag){
+        var length = tag.length;
+        if(length &gt; maxsize)
+        maxsize = length;
+});
+    //构建传入layout的words
+var arr = [],words;
+tags.forEach(function(tag){
+    arr.push({&quot;name&quot;: tag.name,&quot;num&quot; : tag.length});
+});
+words = arr.map(function(d) {
+    var text = d.name.replace(/[^\x00-\xff]/g,&quot;ab&quot;);//对中文的投机处理，用ab代替中文字符
+    return {name:d.name, text: text, size : Math.log(d.num)/(Math.log(maxsize)-Math.log(1)) * 15 + 30};//size的计算取对数，是为了让标签之间的大小相对平均一些。
+          因为博客侧重前端内容，所以某一些标签会比较多，标签最大最小次数的差距会比较大。
+});
+layout.words(words);
+layout.start();
+result.push(&apos;&lt;svg width=&quot;600&quot; height=&quot;400&quot;&gt;&lt;g transform=&quot;translate(300,200)&quot;&gt;&apos;);
+words.forEach(function(word,i){
+    result.push(
+    &apos;&lt;text text-anchor=&quot;middle&quot; fill=&quot;&apos;+fill(i)+&apos;&quot; transform=&quot;translate(&apos;+word.x+&apos;,&apos;+word.y+&apos;)rotate(&apos;+
+    word.rotate+&apos;)&quot; style=&quot;font-size:&apos;+word.size+&apos;px;font-family:Impact&quot;&gt;&apos;+word.name+&apos;&lt;/text&gt;&apos;
+    );
+});
+result.push(&apos;&lt;/g&gt;&lt;/svg&gt;&apos;);
+return result.join(&apos;&apos;);         
+}
+module.exports = tagcloudHelper;
+</code></pre><p>   <code>`</code></p>
+<ol start="2">
+<li>运行，就可以看到结果啦<br>这个我并没有实际操作，原因很简单，最近比较忙，还有一个就是，node安装canvas实在是太麻烦了呀，<br>这里给出地址：</li>
+</ol>
+<ul>
+<li><a href="https://link.jianshu.com?t=http://www.cnblogs.com/virtual/p/3661592.html" target="_blank" rel="noopener">如何用npm install canvas?</a></li>
+<li><a href="https://link.jianshu.com?t=https://cnodejs.org/topic/505080cb5aa28e09430d89b0" target="_blank" rel="noopener">npm install canvas</a></li>
+</ul>
+<h2 id="Yelee-主题配置"><a href="#Yelee-主题配置" class="headerlink" title="Yelee 主题配置"></a>Yelee 主题配置</h2><p>关于主题的配置，这篇文章讲的很详细啦，<a href="https://link.jianshu.com?t=http://moxfive.coding.me/yelee/" target="_blank" rel="noopener">Yelee中文参考手册</a></p>
+<p>关于Hexo,还有最后一篇文章，请看 ：<a href="">搭建Hexo博客进阶篇–API和一些小部件</a></p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
+<li><strong>Hexo官方网站</strong> : <a href="https://link.jianshu.com?t=https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a> </li>
+<li><strong>利用d3-cloud实现标签云</strong> : <a href="https://link.jianshu.com?t=http://www.cnblogs.com/lilyimage/p/5207697.html" target="_blank" rel="noopener">http://www.cnblogs.com/lilyimage/p/5207697.html</a> </li>
+</ol>
+<p>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</p>
+<p>赞赏支持</p>
+<p>​           前端随手笔记 </p>
+<p>​          © 著作权归作者所有         </p>
+<p>举报文章         </p>
+<p><img src="https:////upload.jianshu.io/users/upload_avatars/6117739/8fbc731b-0d03-437d-97f7-6bfbd271edaf.png?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96" alt="96"> </p>
+<p>关注</p>
+<p>lifeColder</p>
+<p>写了 30463 字，被 103 人关注，获得了 221 个喜欢</p>
+<p>浮生若梦，为欢几何</p>
+<p>喜欢</p>
+<p>4</p>
+<p>​         </p>
+<p>​         </p>
+<p>下载app生成长微博图片</p>
+<p>更多分享</p>
+<p><img src="https:////cdn2.jianshu.io/assets/web/web-note-ad-1-c2e1746859dbf03abe49248893c9bea4.png" alt="Web note ad 1"></p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p>被以下专题收入，发现更多相似内容</p>
+<p>收入我的专题</p>
+<p>有用收藏</p>
+<p><img src="https:////upload-images.jianshu.io/upload_images/14771805-a2403f13563ee235.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240" alt="240"></p>
+<p>个人博客的环境搭建及准备工作</p>
+<p>如果你有非常优秀的理解能力和前端开发的技术基础,你可以直接访问hexo的主页来进行任何操作,我所做的所有操作都是基于hexo官方提供的文件和自己的理解进行操作. 网址:<a href="https://hexo.io" target="_blank" rel="noopener">https://hexo.io</a> 一、准备工作 1.了解Hexo Hexo 是一个快速、简洁且高效的博客框架…</p>
+<p><img src="https:////upload.jianshu.io/users/upload_avatars/14771805/b523844e-1909-469d-b884-7607acb20c20.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48" alt="48">               </p>
+<p>葬歌倾城</p>
+<p><img src="https:////upload-images.jianshu.io/upload_images/12970107-155c34fefb873803.PNG?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240" alt="240"></p>
+<p>Django建立设备管理系统</p>
+<p>1.摘要 近期有关于建立简单设备管理系统的需求，结合Django学习，在参考众多大神来源的资源基础上，参考刘江博客，实现了基本功能，并增加了用户登陆、增删改、打印、导出、copy功能。主要参考资源：（1）刘江Django教程（2）Python Django 的学习路径（3）…</p>
+<p><img src="https:////upload.jianshu.io/users/upload_avatars/12970107/5542bf70-61c0-4334-9a59-16d9bb0324b8.png?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48" alt="48">               </p>
+<p>bc_zhang</p>
+<p><img src="https:////upload-images.jianshu.io/upload_images/15645795-b94ce1da8c095eee.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240" alt="240"></p>
+<p>springboot+redis项目实战完整篇</p>
+<p>Springboot+redis 有关Springboot+redis的配置和使用，完整篇。 此配置，几乎可以无脑的粘贴进项目中使用。 springboot项目的创建可以参考之前：<a href="https://www.jianshu.com/p/b9f066a221b0" target="_blank" rel="noopener">https://www.jianshu.com/p/b9f066a221b0</a> 1.在sprin…</p>
+<p><img src="https:////upload.jianshu.io/users/upload_avatars/15645795/14f9ea5c-3223-4f08-94d0-90fafabbbeff?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48" alt="48">               </p>
+<p>宇宙小神特别萌</p>
+<p><img src="https:////upload-images.jianshu.io/upload_images/7547996-88a494864d3f5410.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240" alt="240"></p>
+<p>13 - vue 移动端适配</p>
+<p>一、方法一：rem 布局 在主入口：index.html，  标签内添加如下JS 代码：（实现在标准 375px宽度适配下，100px = 1rem。） 二、方法二：lib-flexible 插件实现 1、安装插件 2、在main.js中引入lib-flexible 3、在…</p>
+<p><img src="https:////upload.jianshu.io/users/upload_avatars/7547996/bca490b4-948b-47f3-95ce-e3bc45f485c6.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48" alt="48">               </p>
+<p>大大的小小小心愿</p>
+<p><img src="https:////upload-images.jianshu.io/upload_images/5744080-19e8204aa1ec30ae.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240" alt="240"></p>
+<p>开始使用Markdown吧！</p>
+<p>前言 最近一直在写东西，发现大家都在用Markdown，尝试了一下，发觉语法简单而且平台通用性高，决定以后都用这个来写，现在把语法记录下来，方便后期查看。 在查找MD相关资料的时候发现：Aaron Swartz是它的设计者之一。说来正巧，正好前段时间看过《互联网之子》 ，影…</p>
+<p><img src="https:////upload.jianshu.io/users/upload_avatars/5744080/14891ec8-9fbf-4875-896f-0a1061b95f39.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48" alt="48">               </p>
+<p>XShaw</p>
+<p>那些欲言又止的小情绪</p>
+<p>分手的前一天，像往日一样再公园里遛遛弯，吹吹风，看看景，我说，你好像一点都不期待我来，你说，现在天黑的越来越早，路上不安全，我说，我不怕 我知道的，你只是不期待，你不喜欢我，每次出来吃饭见面，都只是程序性的，而非出于你的本心，我知道你不爱我，是时候该放弃了，第一次和你发脾气…</p>
+<p><img src="https:////upload.jianshu.io/users/upload_avatars/2478791/57c447dc5cd8?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48" alt="48">               </p>
+<p>张小猫笨</p>
+<p><img src="https:////upload-images.jianshu.io/upload_images/1727605-f5e6a1e159561fd7.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240" alt="240"></p>
+<p>区块链，如何破解中小企业融资难困局？</p>
+<p>近年来，企业欠薪、老板跑路已经成为了大家在新闻上习以为常的家常便饭，“江南皮革厂”的段子也是时不时出没在社交媒体上，这些已经不新的“新闻”反复地提醒着大家，多年来企业融资的老难题已经成为长期悬而未决的“新”困境，所有人都在想有没有什么可以破题的办法，伴随着金融科技的发展，也…</p>
+<p><img src="https:////upload.jianshu.io/users/upload_avatars/1727605/8a2e2e13bda3.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48" alt="48">               </p>
+<p>慕容随风</p>
+<p><img src="https:////upload-images.jianshu.io/upload_images/5337323-e31806ec6cb503a2.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240" alt="240"></p>
+<p>【0722】  晨读感悟  好奇心</p>
+<p>好奇心拥有一颗好奇的心是非常重要的，经过时间的打磨许多人已经失去了一颗宝贵的好奇心，小的时候每个人都非常的好奇，好奇害死猫我们常常因为好奇心而闯祸，也许是大人以为我们小不懂事，长大了才明白好奇只要运用好将会带来不一样的收获。 今天文中分钟的三个内容和我带来的启发是：人之所以…</p>
+<p><img src="https:////upload.jianshu.io/users/upload_avatars/5337323/ddb37710-c1a9-4cf1-bac3-a9ac85649cff?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48" alt="48">               </p>
+<p>再认真点</p>
+<p>【文魁大脑读书会】牛小强26/60天 《理财规划师专业能力》</p>
+<p>阅读时间：2015年11月6日 9:00-10:00 1小时 阅读课本：《理财规划师专业能力》中国财经经济出版社 阅读目标：提高自我能力，迎接11月21日考试 阅读方法：重复阅读 阅读数量：第四章 阅读笔记：第四章 保险规划 五、可保利益原则 1.性质 保险合同的客体；保险…</p>
+<p><img src="https:////cdn2.jianshu.io/assets/default_avatar/14-0651acff782e7a18653d7530d6b27661.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48" alt="48">               </p>
+<p>文魁大脑牛小强</p>
+<p>又一堆碎片</p>
+<p>1、狼血上涌，差点想较真辩下去了…作为一个专业官V…老瓦要是会推挡，那许绍发江嘉良当年还忧伤个啥？Web刘还奋起个啥……#推挡是直拍最独有的技术动作之一#头一回听说老瓦那些技术是“推挡”的，我得好好适应一下这个新概念…  2月5日 00:03 2、怒吼 - “上天造个刘国梁…</p>
+<p><img src="https:////upload.jianshu.io/users/upload_avatars/16097/%E9%83%8E%E5%BF%83%E5%A6%82%E9%93%81.gif?imageMogr2/auto-orient/strip|imageView2/1/w/48/h/48" alt="48">               </p>
+<p>狼心如铁</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/test/" rel="tag"># test</a>
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/11/开工大吉/" rel="next" title="开工大吉">
+                <i class="fa fa-chevron-left"></i> 开工大吉
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="http://qiniu.bidongdong.top/image/jpg/jokerbi.jpg" alt="Joker Bi">
+            
+              <p class="site-author-name" itemprop="name">Joker Bi</p>
+              <p class="site-description motion-element" itemprop="description">贪婪与欲望是人类永恒的敌人！</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.cnblogs.com/jokerBi" target="_blank" title="博客园">
+                      
+                        <i class="fa fa-fw fa-globe"></i>博客园</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/qq_42806416" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-crosshairs"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/u/ff6202bce8aa" target="_blank" title="简书">
+                      
+                        <i class="fa fa-fw fa-heartbeat"></i>简书</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Bijoker" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建Hexo博客进阶篇—主题自定义（三）"><span class="nav-number">1.</span> <span class="nav-text">搭建Hexo博客进阶篇—主题自定义（三）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Yelee主题介绍"><span class="nav-number">1.1.</span> <span class="nav-text">Yelee主题介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#更换主题"><span class="nav-number">1.1.1.</span> <span class="nav-text">更换主题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模板"><span class="nav-number">1.2.</span> <span class="nav-text">模板</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#布局"><span class="nav-number">1.2.1.</span> <span class="nav-text">布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#局部模板"><span class="nav-number">1.2.2.</span> <span class="nav-text">局部模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#局部变量"><span class="nav-number">1.2.3.</span> <span class="nav-text">局部变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#优化"><span class="nav-number">1.2.4.</span> <span class="nav-text">优化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量"><span class="nav-number">1.3.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#全局变量"><span class="nav-number">1.3.1.</span> <span class="nav-text">全局变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站变量"><span class="nav-number">1.3.2.</span> <span class="nav-text">网站变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面变量"><span class="nav-number">1.3.3.</span> <span class="nav-text">页面变量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#辅助函数"><span class="nav-number">1.4.</span> <span class="nav-text">辅助函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#网址"><span class="nav-number">1.4.1.</span> <span class="nav-text">网址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML-标签"><span class="nav-number">1.4.2.</span> <span class="nav-text">HTML 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#条件函数"><span class="nav-number">1.4.3.</span> <span class="nav-text">条件函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串处理"><span class="nav-number">1.4.4.</span> <span class="nav-text">字符串处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模板-1"><span class="nav-number">1.4.5.</span> <span class="nav-text">模板</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日期与时间"><span class="nav-number">1.4.6.</span> <span class="nav-text">日期与时间</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#date"><span class="nav-number">1.4.6.1.</span> <span class="nav-text">date</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#date-xml"><span class="nav-number">1.4.6.2.</span> <span class="nav-text">date_xml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#time"><span class="nav-number">1.4.6.3.</span> <span class="nav-text">time</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#full-date"><span class="nav-number">1.4.6.4.</span> <span class="nav-text">full_date</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#moment"><span class="nav-number">1.4.6.5.</span> <span class="nav-text">moment</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表"><span class="nav-number">1.4.7.</span> <span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#list-categories"><span class="nav-number">1.4.7.1.</span> <span class="nav-text">list_categories</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#list-tags"><span class="nav-number">1.4.7.2.</span> <span class="nav-text">list_tags</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#list-archives"><span class="nav-number">1.4.7.3.</span> <span class="nav-text">list_archives</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#list-posts"><span class="nav-number">1.4.7.4.</span> <span class="nav-text">list_posts</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tagcloud"><span class="nav-number">1.4.7.5.</span> <span class="nav-text">tagcloud</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">1.4.8.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#paginator"><span class="nav-number">1.4.8.1.</span> <span class="nav-text">paginator</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#search-form"><span class="nav-number">1.4.8.2.</span> <span class="nav-text">search_form</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#number-format"><span class="nav-number">1.4.8.3.</span> <span class="nav-text">number_format</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#open-graph"><span class="nav-number">1.4.8.4.</span> <span class="nav-text">open_graph</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo页面渲染流程"><span class="nav-number">1.5.</span> <span class="nav-text">Hexo页面渲染流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Yelee目录说明"><span class="nav-number">1.5.1.</span> <span class="nav-text">Yelee目录说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Yelee-主题配置"><span class="nav-number">1.6.</span> <span class="nav-text">Yelee 主题配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">1.7.</span> <span class="nav-text">参考资料</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-snowflake-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Joker Bi</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+
+    
+      <span class="post-meta-item-text">haha&#58;</span>
+    
+    <span title="Site words total count">7.4k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 访问人数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 访问总量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
